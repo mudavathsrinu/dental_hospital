@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-header{
+   background-color:rgba(14, 241, 14, 0.979);
+    width: 100%;
+    padding: 8px 16px;
+}
+.main-header>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav-main{
+    display: inline-block;
+    text-align: right;
+   width:calc(100% - 74px);
+}
+.nav-item{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.nav-li{
+    display: inline-block;
+    margin: 0 16px;
+}
+.icon{
+    font-size: 30px;
+    color: darkgreen;
+}
+.nav-li a{
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-li a:hover, 
+.nav-li a:active{
+    color: white;
+    border-bottom: 5px solid white;
+}
+.nav-li-link4 a{
+   color: white;
+    background-color: rgba(255, 0, 0, 0.753);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.nav-li-link4 a:hover{
+    background-color: white;
+    color: red;
+    text-decoration: none;
+}
+
+.container{
+    margin-top: 48px;
+}
+.container:first-of-type{
+    margin-top: 96px;
+}
+.container-image{
+    width: 65%;
+    display:inline-block;
+    vertical-align: middle;
+    box-shadow: 3px 3px 3px gray;
+}
+.container-data{
+    text-align: right;
+    padding: 15px;
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.image{
+    width: 100%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#customer-2{
+    text-align: right;
+}
+.heading{
+    color:red;
+}
+.sub-heading {
+    color: gray;
+}
+.sub-heading a {
+    color: gray;
+    text-decoration: none;
+}
+.info{
+    color: black;
+   font-display: fallback;
+}
+
+.footer{
+    background-color: black;
+}
+.footer1 li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px;
+}
+.footer1 li a{
+    color: white;
+    text-decoration: none;
+}
+.footer1{
+    text-align: center;
+}
+@media (min-width:600px) {
+    .container-image{
+        width: 60%;
+    }
+    .container-data{
+        width: 32%;
+    }
+}
+@media (max-width:600px) {
+    .container-image{
+        width: 100%;
+    }
+    .container-data{
+        width: 100%;
+    }
+}

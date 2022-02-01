@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header{
+    background-color: olivedrab;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+header ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 10px;
+}
+ 
+ul li{
+    padding: 8px 13px;
+}
+
+.tittle{
+    font-size: 25px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+/* content */
+section{
+    display: flex;
+}
+.side-nav{
+    background-color: rgba(245, 222, 179, 0.726);
+    flex: 0 0 20vw;
+}
+section ul{
+    list-style: none;
+    padding: 8px 13px;
+    width: 250px;
+} 
+ section ul a{
+     color: olivedrab;
+     text-decoration: none;
+ }
+ section ul li{
+    border-bottom: 2px solid olivedrab;
+ }
+ .side-nav img{
+     width: 100%;
+     padding: 5px;
+ }
+
+ /* side-content */
+.side-content{
+    margin-left: 10px;
+}
+.group-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-images img{
+    width: 100%;
+}
+.service-images{
+    border: 1px solid #eee;
+    padding: 10px;
+    flex-basis: 32%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:15px ;
+}
+.button{
+    align-self: flex-start;
+    margin-top: auto;
+   
+}
+.button a{
+    background-color: rgba(128, 128, 128, 0.74);
+    padding: 6px 10px;
+    color: white;
+    text-decoration: none;
+   
+}
+.button a:hover {
+    background-color: grey;
+    color: white;
+}
+
+/* footer */
+footer{
+    background-color: olivedrab;
+    padding: 8px 10px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width:950px) {
+   .service-images{
+       flex-basis: 48%;
+   }
+   section ul{
+       width: 200px;
+   }
+   
+}
+@media screen and (max-width:600px) {
+    header{
+        flex-direction: column;
+       
+    }
+    section{
+        flex-direction: column;
+    }
+    .tittle{
+        order: -1;
+    }
+    .side-content{
+        order: -1;
+    }
+    .service-images{
+        flex-basis: 100%;
+    }
+    h2{
+        text-align: center;
+    }
+}

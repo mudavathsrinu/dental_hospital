@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.main-header{
+   background-color:rgba(14, 241, 14, 0.979);
+    width: 100%;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.nav-main{
+   display: flex;
+}
+.nav-item{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+.nav-li{
+    margin: 0 16px;
+}
+.icon{
+    font-size: 30px;
+    color: darkgreen;
+}
+.nav-li a{
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-li a:hover, 
+.nav-li a:active{
+    color: white;
+    border-bottom: 5px solid white;
+}
+.nav-li-link4 a{
+   color: white;
+    background-color: rgba(255, 0, 0, 0.753);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.nav-li-link4 a:hover{
+    background-color: white;
+    color: red;
+    text-decoration: none;
+}
+
+.background-image{
+    background-image: url("https://en.wikiarquitectura.com/wp-content/uploads/2017/01/10_Wales_Millenium_Center.jpg");
+    background-size: cover;
+    vertical-align: middle;
+    /* width:100% ; */
+    height: 400px;
+    position: relative;
+    opacity: 1;
+}
+
+.text{
+    position: absolute;
+    top: 0;
+}
+.heading{
+    color: green;
+    text-align: center;
+    margin: 50px 0 10px 0;
+}
+.plans-list{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.plans{
+    background: lightgreen;
+    color: black;
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    vertical-align: middle;
+}
+.box2{
+    background: rgba(0, 100, 0, 0.829);
+    color: white;
+    box-shadow: 2px 2px 2px 3px gray;
+}
+button{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 8px;
+    font: inherit;
+    padding: 6px;
+    border: 1.5px solid darkgreen;
+    font-weight: bold;
+}
+button:hover
+button:active
+{
+    background-color: white;
+    color: darkgreen;
+}
+.content{
+    background: white;
+    color: green;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+.tittle-1{
+    color: darkgreen;
+}
+.tittle-2{
+    color: grey;
+}
+.content2{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: 8px 0;
+}
+.key-features {
+    background-color: rgba(139, 0, 0, 0.829);
+    color: white;
+    margin-top: 50px;
+}
+.second-heading{
+    color: white;
+    text-align: center;
+   padding-top: 20px;
+}
+.key-features-ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.key-features-li{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 10px;
+}
+.key-features-text{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.key-features-image{
+    background-color: rgb(169, 169, 169);
+    width: 125px;
+    height: 125px;
+    margin: auto;
+    border-radius: 50%;
+}
+.footer{
+    background-color: black;
+   
+}
+.footer1 li{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 20px;
+}
+.footer1 li a{
+    color: white;
+    text-decoration: none;
+}
+.footer1{
+    text-align: center;
+}
+.icon1{
+    display: flex !important;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+   font-size: 50px;
+   
+}
+@media (min-width:600px) {
+    .plans{
+        width: 25%;
+    }
+}
+@media (max-width:600px) {
+    .plans{
+        width: 100%;
+    }
+}
+@media (min-width:600px) {
+    .background-image{
+        height: 400px;
+        background-position: 50% 25%;
+    }
+}
+@media (max-width:600px) {
+    .background-image{
+        height: 300px;
+        background-position: 50% 25%;
+    }
+}
+@media (min-width:600px) {
+    .key-features-li{
+        width: 27%;
+    }
+}
+@media (max-width:600px) {
+    .key-features-li{
+        width: 100%;
+    }
+}
+@media (min-width:600px) {
+    .footer1 li{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* background-image */
+section{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://www.espncricinfo.com/db/PICTURES/CMS/326900/326943.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* navigation */
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.navigation h1{
+    color: darkorange;
+    font-size: 30px;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin:  0 10px;
+    font-size: 14px;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: darkorange;
+}
+
+.box input{
+    background-color: transparent;
+    padding: 4px 8px ;
+    border-radius: 5px;
+    border: 2px solid darkorange;
+    
+}
+.button{
+    
+    background-color: darkorange;
+    color: white;
+    padding: 4px 8px ;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid darkorange;
+}
+
+/* content */
+.content{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* details */
+.details{
+    margin:0 30px;
+   
+}
+.details h1{
+    color:white ;
+    font-size: 35px;
+}
+.details h2{
+    color: darkorange;
+    font-size: 35px;
+}
+.details p{
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+}
+.details button{
+    background-color: darkorange;
+    padding: 5px 16px;
+    margin: 10px 0;
+    border-radius: 7px;
+    border: 1px solid darkorange;
+    cursor: pointer;
+}
+
+/* form */
+.form{
+    margin: 0 30px;
+    background-color: black;   
+    border-radius: 7px;
+    position: relative;
+}
+.form h1{
+    color: darkorange;
+    font-size: 18px;
+    background-color: white;
+    margin: 50px 10px 10px 10px;
+    padding: 4px;
+    border-radius: 5px;
+    text-align: center;
+}
+.form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid darkorange;
+    padding: 6px;
+    margin:10px ;
+}
+::placeholder{
+    color: white;
+}
+.form h2{
+    color: black;
+    font-size: 18px;
+    background-color: darkorange;
+    margin: 10px;
+    padding: 4px;
+    border-radius: 5px;
+    text-align: center;
+}
+.form p{
+    color: white;
+    font-size: 12px;
+    margin: 10px;
+    text-align: center;
+}
+.icon{
+    color: white;
+    text-align: center;
+    margin: 20px 10px 25px 10px;
+}
+.icon .face{
+    padding: 0 6px;
+    font-size: 14px;
+}
+
+
+@media screen and (min-width:1000px) {
+    .details{
+        margin: 0 100px;
+        width: 70%;
+    }
+    .details h1{
+        font-size: 45px;
+    }
+    .details h2{       
+        font-size: 45px;
+    }
+    .form{
+        margin:0 100px 0 0;
+        width: 30%;
+    }
+    .form input{
+       margin-left :80px;
+    }
+    
+}
+@media screen and(min-width:820px) {
+    .navigation{
+      margin: 20px 30px;
+    }
+    ul li a{
+        margin: 0 30px;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    .content{
+        margin-top: 40%;
+        display: flex;
+        flex-flow: column;
+        
+    }
+    ul li{
+        display: block;
+    }
+    section{
+        width: 100%;
+        height: 900px;
+        overflow-y: scroll;
+    }
+    .box{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+}
+

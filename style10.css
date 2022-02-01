@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header{
+    position:sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li{
+    display: flex;
+}
+ul li a{
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+.link4{
+    position: relative;
+    display: inline-block;
+}
+#menu{
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 6px;
+    display: none;
+}
+.link4:hover #menu{
+    display: block;
+}
+
+ul li:hover{
+    background-color: gray;
+}
+.icon{
+    padding: 14px 16px;
+}
+.icon:hover{
+    background-color: orangered;
+}
+
+
+/* club-image */
+.club-image{
+    position: relative;
+}
+.club-details{
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 90%;
+    right: 40%;
+}
+
+/*  hotel-details*/
+.images{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin: 60px ;
+}
+h1 {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+.group-of-images{
+    display: flex;
+}
+.group-of-images img{
+    width: 100%;
+    padding: 10px;
+}
+
+/* 2nd-header */
+.container{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.sec-header{
+    position: relative;
+    background-color: black;
+     color: white;
+    
+}
+h1{
+    padding-top: 150px;
+}
+#p{
+    text-align: center;
+    color: gray;
+    font-family:cursive;
+    font-size: 15px;
+}
+.booking-form{
+    background-color: white;
+    color: gray;
+}
+.sold{
+    background-color: orangered;
+    color: white;
+}
+.three{
+    border-radius: 45%;
+    background-color: black;
+    padding: 4px;
+    color: white;
+}
+.number{
+    display: flex;
+    justify-content: space-between;
+}
+.tour-places{
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    flex-basis: 30%;
+    color: black;
+    padding-bottom: 150px;
+}
+.places img{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+.places img:hover{
+    opacity: 0.5;
+}
+.places{
+    border: 1px solid gray;
+    margin: 10px;
+    background-color: white;
+}
+.places a{
+   background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.places a:hover{
+    background-color:lightgray;
+    color: black;
+}
+.country{
+    text-align: center;
+    padding: 3px;
+}
+.date{
+    color: gray;
+    text-align: center;
+}
+
+/* form */
+#b{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+label{
+    margin: 0 4px;
+}
+input{
+    width: 100%;
+    padding: 8px 14px;
+    margin: 8px 4px;
+}
+button{
+    width: 100%;
+    margin: 0 8px;
+    padding: 8px 14px;
+    background-color: black;
+    color: white;
+}
+
+
+/* icons */
+.face{
+    margin-top: 50px;
+    text-align: center;
+    color: gray;
+    font-size: 30px;
+}
+footer{
+    text-align: center;
+    color: gray;
+    padding: 10px;
+    margin-bottom: 100px;
+}
